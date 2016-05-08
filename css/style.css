@@ -1,0 +1,101 @@
+h1{
+    text-align: center;
+}
+
+.screen_mode{
+    background-image: url('../img/desktop.jpg');
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0%;
+}
+.red_div{
+    background-color: red;
+}
+.bottom_div{
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+.bottom_div div{
+    margin-bottom: 1%;
+}
+.border{
+    border: 10px solid red;
+}
+.jumbotron{
+    background-image: url("../img/taj_mahal.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: yellow;
+}
+.background_shading{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron p{
+    color: white;
+}
+.flag{
+     padding-top: 5%;   
+}
+.flag p{
+    color: gray;
+    margin-top: 3%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+.item p {
+    width: 70%;
+    margin: auto;
+    color: yellow;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*Tells User What Mode They Are in Based on Screen Size*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+   .screen_mode{
+         background-image: url('../img/tablet.jpg');
+      
+   }    
+ }
+
+/*Displays Cellphone to Show User that they are in Cell Phone Mode*/
+@media only screen and (max-width: 768px) {
+   .cellphone{
+       height: 37.5px;
+       width: 18.5px;
+        
+       display: inline-block;
+   }
+   .screen_mode{
+        display: none;
+    }
+}
+
+/*Hides cellphone image when screen size is above 768px*/
+@media only screen and (min-width: 768px) {
+     .cellphone{
+        display: none;
+     }
+}
+
+@media only screen and (min-width: 1200px) {
+    .jumbotron {
+        background-image: url("../img/taj_panorama.jpg");
+    }
+    
+}
+
+#plane {
+    z-index: 1;
+}
+
+#story {
+    font-size: 1.5em;
+}

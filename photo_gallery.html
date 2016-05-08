@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    </head>
+    
+    <body>
+     
+          
+          <!--Collasping Navbar-->
+          <nav class="navbar navbar-default">
+            <div class="navbar header">
+              <a class="navbar-brand" href="#">Photo Gallery</a>
+              <img class="cellphone" src="img/cellphone.jpg">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu</button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-camera"></span>  Photo Gallery</a></li>
+                <li><a href="carousel.html"><span class="glyphicon glyphicon-play-circle"></span>  Carousel</a></li>
+                
+              </ul>
+            </div>
+           <div class="screen_mode col-xs-1 col-sm-offset-11 col-xs-offset-6">
+            </div>
+            
+          </nav>
+          
+            
+          
+        <!--Photo Gallery-->
+        <div class="container-fluid">  
+          <h2>Photo Gallery</h2>
+          
+          
+          <div class="row">
+            
+              <!--Trigger for Taj Mahal Modal-->
+             <div class ="col-md-4 col-sm-6 col-xs-12">
+                  <a href="#myModal" data-toggle="modal">
+                    <img src="img/taj_mahal.jpg" class="img-thumbnail img-responsive" title="Click to Enlarge">
+                  </a>
+              </div>
+              
+              <!--Trigger for Angkor Thom Modal-->
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                  <a href= "#myModal1" data-toggle="modal">
+                    <img src="img/angkor_thom.jpg" class="img-thumbnail img-responsive" title="Click to Enlarge">
+                  </a>
+              </div>
+              
+             <!--Trigger for Ang Thong Modal-->
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                  <a href="#myModal2" data-toggle="modal">
+                    <img src="img/ang_thong.jpg" class="img-thumbnail img-responsive" title="Click to Enlarge">
+                  </a>
+              </div>
+              
+            <!--Trigger for Hawa Mahal Modal-->
+             <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="#myModal3" data-toggle="modal">
+                  <img src="img/hawa_mahal.jpg" class="img-thumbnail img-responsive" title="Click to Enlarge">
+                </a>
+              </div>
+                
+          <!--Trigger for Chiang Mai Modal-->
+           <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href= "#myModal4" data-toggle="modal">
+                <img src="img/elephantnaturepark.jpg" class="img-thumbnail img-responsive" title="Click to Enlarge">
+              </a>
+            </div>
+          
+          <!--Trigger for Bangkok  Modal-->
+           <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="#myModal5" data-toggle="modal">
+              <img src="img/wat_pho.jpg" class="img-thumbnail img-responsive" title="Click to Enlarge">
+            </a>
+          </div>
+        </div>
+          
+      <!--Modal Section-->  
+          
+          
+           <!-- Taj Mahal Modal-->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!--Taj Mahal Photo-->
+                <div class="modal-header">
+                  <h2 class="modal-title"> The Taj Mahal</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/taj_mahal.jpg" width="100%" height="100%">
+                </div>
+                <div class="modal-footer">
+                  <h5>The most beautiful building in the world!</h5>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+               </div> 
+            </div>
+         
+          </div>
+        </div>
+          
+        <!--Ang Thong Modal-->
+          <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!--Ang Thong Photo-->
+                 <div class="modal-header">
+                  <h2 class="modal-title">Ang Thong</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/ang_thong.jpg" width="100%" height="100%">
+                </div>
+                <div class="modal-footer">
+                  <h5>The pristine islands of Thailand!</h5>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           <!--Angkor Thom Modal-->
+          <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!--Angkor Thom Photo-->
+                 <div class="modal-header">
+                  <h2 class="modal-title">Angkor Thom</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/angkor_thom.jpg" width="100%" height="100%">
+                </div>
+                <div class="modal-footer">
+                  <h5>The ancient temple of Angkor Thom!</h5>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           <!--Hawa Mahal Modal-->
+          <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!--Hawa Mahal Photo-->
+                 <div class="modal-header">
+                  <h2 class="modal-title">Hawa Mahal</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/hawa_mahal.jpg" width="100%" height="100%">
+                </div>
+                <div class="modal-footer">
+                  <h5>The Palace of the Winds in Jaipur's Pink City!</h5>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           <!--Chiang Mai Modal-->
+          <div class="modal fade" id="myModal4" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!--Chiang Mai Elephant Park Photo-->
+                 <div class="modal-header">
+                  <h2 class="modal-title">Chiang Mai</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/elephantnaturepark.jpg" width="100%" height="100%">
+                </div>
+                <div class="modal-footer">
+                  <h5>Elephants in a nature park near Chiang Mai!</h5>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <!--Bangkok Modal -->
+          <div class="modal fade" id="myModal5" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!--Wat Photo Photo-->
+                 <div class="modal-header">
+                  <h2 class="modal-title">Wat Pho</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/wat_pho.jpg" width="100%" height="100%">
+                </div>
+                <div class="modal-footer">
+                  <h5>The reclining Buddha in Bangkok!</h5>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+      
+      </div>
+          
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   </body>
+</html>
